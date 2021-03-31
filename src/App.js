@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import {Counter} from "./components/Counter";
+import {CharaterCounter} from "./components/CharacterCounter";
+import {PasswordMatch} from "./components/PasswordMatch";
+import {Alphanumberic} from "./components/Alphanumberic";
+import {DisableSubmit} from "./components/DisableSubmit"
+import {ShowPassword} from "./components/ShowPassword"
+import {DesignerTool} from "./components/DesignerTool"
+import {SwitchTabs} from "./components/SwitchTabs"
+import {Toast} from "./components/Toast"
+import {Todo} from "./components/Todo"
+import DarkMode from './components/DarkMode';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Counter />
+      <CharaterCounter />
+      <PasswordMatch />
+      <Alphanumberic />
+      <DisableSubmit />
+      <ShowPassword />
+      <DesignerTool />
+      <SwitchTabs />
+      <Toast />
+      <Todo />
+      <DarkMode />
     </div>
   );
 }
